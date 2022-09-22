@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import { faker } from "@faker-js/faker";
+
+Cypress.Commands.add('createRecommendation', () => {
+    const recommendation = {
+        name: faker.lorem.words(),
+        youtubeLink: "https://www.youtube.com/watch?v=ePjtnSPFWK8&ab_channel=CHXVEVO"
+    };
+
+    cy.request('POST', `${REACT_APP_API_BASE_URL}/recommendations`, recommendation);
+});
