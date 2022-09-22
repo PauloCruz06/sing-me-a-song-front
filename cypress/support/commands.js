@@ -31,5 +31,5 @@ Cypress.Commands.add('createRecommendation', () => {
         youtubeLink: "https://www.youtube.com/watch?v=ePjtnSPFWK8&ab_channel=CHXVEVO"
     };
 
-    cy.request('POST', `${REACT_APP_API_BASE_URL}/recommendations`, recommendation);
+    cy.request('POST', `${Cypress.env('api_server')}/recommendations`, recommendation);
 });

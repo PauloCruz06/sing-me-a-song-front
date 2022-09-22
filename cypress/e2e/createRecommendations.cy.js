@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 
 beforeEach(async () => {
   await cy.request('POST', `${Cypress.env('api_server')}/e2e/reset`, {});
-})
+});
 
 describe('Create and show recommendations', () => {
   it('Test create recommendations', () => {
@@ -18,4 +18,4 @@ describe('Create and show recommendations', () => {
 
     cy.get('[data-cy="song_name"]').should('contain.text', recommendation.name);
   });
-})
+});
