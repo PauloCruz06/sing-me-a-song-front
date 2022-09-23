@@ -4,13 +4,11 @@ beforeEach(async () => {
 
 describe("Upvote and downvote recommendations", () => {
     it("Test upvote recomendation", () => {
-        let recommendation = {};
-        
         cy.visit('http://localhost:3000/');
 
         cy.createRecommendation().then(() => {
             cy.request('GET', `${Cypress.env('api_server')}/recommendations`).then(data => {
-                recommendation = data.body[0];
+                const recommendation = data.body[0];
 
                 cy.get('[data-cy="handle_upvote"]').click();
 
