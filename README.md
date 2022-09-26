@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# <p align = "center"> Projeto #21 Sing me a song (front) </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align = "center">
+   <img src="https://img.shields.io/badge/author-PauloCruz06-4dae71?style=flat-square" />
+   <img src="https://img.shields.io/github/languages/count/PauloCruz06/projeto21-sing-me-a-song-front?color=4dae71&style=flat-square" />
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+##  :clipboard: Descrição
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Sing me a song é uma aplicação para recomendação anônima de músicas. Quanto mais as pessoas curtirem uma recomendação, maior a chance dela ser recomendada para outras pessoas. Nesse projeto o objetivo principal é fazer testes automatizados para verificar a integridade do [front-end da aplicação](https://github.com/driven-projects/sing-me-a-song/tree/main/front-end).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+***
 
-### `npm test`
+## :computer:	 Tecnologias e Conceitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJs
+- Node.js
+- JavaScript
+- Axios
+- Cypress
 
-### `npm run build`
+***
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏁 Rodando a aplicação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este projeto foi inicializado usando [Create React App](https://github.com/facebook/create-react-app). Também foi utilizado [Axios](https://github.com/axios/axios) para fazer requisições na api.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para essa aplicação são feitos testes de ponta a ponta (e2e) utilizando o [Cypress](https://github.com/cypress-io/cypress).
 
-### `npm run eject`
+Primeiro, faça o clone desse repositório na sua maquina:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+git clone https://github.com/PauloCruz06/projeto21-sing-me-a-song-front.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Depois, dentro da pasta, rode o seguinte comando para instalar as dependencias.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
+Também é necessário que o [back-end](https://github.com/PauloCruz06/projeto21-sing-me-a-song-back.git) dessa aplicação esteja rodando na sua máquina.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Após executar o back-end, basta iniciar com:
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para rodar os testes ponta a ponta com o Cypress é preciso que tanto que o front-end quanto o back-end estejam sendo executados. Depois para instalar e abrir o cypress no seu sistema digite o seguinte comando em um outro terminal:
+```
+npx cypress open
+```
+Em seguida será aberta uma janela do cypress com as configurações dos testes e2e, basta clicar em um dos testes e ele será executado.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+:grey_exclamation:[template usado nesse readme](https://gist.github.com/luanalessa/7f98467a5ed62d00dcbde67d4556a1e4#file-readme-md) :)
